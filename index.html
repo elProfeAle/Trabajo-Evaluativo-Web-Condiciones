@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Proyecto Web + Condicionales</title>
   <style>
-    body{font-family:system-ui, sans-serif;line-height:1.6;background:#0f172a;color:#e5e7eb;margin:0}
-    header{background:#111827;padding:1rem;position:sticky;top:0}
-    h1{margin:0;font-size:1.4rem}
-    main{padding:1rem;max-width:1100px;margin:auto}
-    section{background:#1e293b;margin:1rem 0;padding:1rem;border-radius:10px}
-    h2{margin-top:0}
-    details{background:#0b1225;margin:.5rem 0;padding:.5rem 1rem;border-radius:8px}
-    summary{cursor:pointer;font-weight:600}
-    ol{margin-top:.5rem}
-    code{background:#0b1225;padding:.1rem .3rem;border-radius:4px}
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0
+    }
+
+    header {
+      background: #111827;
+      padding: 1rem;
+      position: sticky;
+      top: 0
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.4rem
+    }
+
+    main {
+      padding: 1rem;
+      max-width: 1100px;
+      margin: auto
+    }
+
+    section {
+      background: #1e293b;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px
+    }
+
+    h2 {
+      margin-top: 0
+    }
+
+    details {
+      background: #0b1225;
+      margin: .5rem 0;
+      padding: .5rem 1rem;
+      border-radius: 8px
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600
+    }
+
+    ol {
+      margin-top: .5rem
+    }
+
+    code {
+      background: #0b1225;
+      padding: .1rem .3rem;
+      border-radius: 4px
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Proyecto Web + Ejercicios de Condicionales</h1>
@@ -26,197 +76,364 @@
       <h2>Consigna general</h2>
       <p><strong>Consigna:</strong> Diseñar un sitio web completo que incluya:</p>
       <ul>
-        <li>Un archivo <code>.html</code> con los elementos necesarios para mostrar tu temática asignada (estructura semántica, secciones, navegación).</li>
+        <li>Un archivo <code>.html</code> con los elementos necesarios para mostrar tu temática asignada (estructura
+          semántica, secciones, navegación).</li>
         <li>Un archivo <code>.css</code> con los estilos para darle diseño y presentación a tu sitio.</li>
-        <li>Un archivo <code>.js</code> con las actividades de alternativa condicional, usando <code>prompt()</code> para pedir datos y <code>alert()</code> o <code>console.log()</code> para mostrar los resultados.</li>
-        <li>Todos los archivos deben tener <strong>nombres significativos</strong> y estar organizados en una misma carpeta.</li>
+        <li>Un archivo <code>.js</code> con las actividades de alternativa condicional, usando <code>prompt()</code>
+          para pedir datos y <code>alert()</code> o <code>console.log()</code> para mostrar los resultados.</li>
+        <li>Todos los archivos deben tener <strong>nombres significativos</strong> y estar organizados en una misma
+          carpeta.</li>
       </ul>
       <p><strong>Objetivos:</strong></p>
       <ul>
-        <li>Practicar el uso de etiquetas HTML, CSS responsivo y condicionales en JavaScript.</li>
+        <li>Practicar el uso de etiquetas HTML, CSS y condicionales en JavaScript.</li>
         <li>Relacionar la programación con tu temática específica.</li>
         <li>Desarrollar hábitos de orden y buena organización de archivos.</li>
+        <li>Fomentar la creatividad y el diseño web.</li>
+        <li>Mejorar la capacidad de resolver problemas mediante condicionales.</li>
       </ul>
     </section>
 
     <section>
       <h2>Ejercicios por estudiante (situaciones problemáticas)</h2>
 
-      <details><summary>Alonso Jerónimo – Festival de música</summary><ol>
-        <li>El festival necesita calcular entradas según edad. Pedí la edad y mostrá: <12 → “Entrada gratis”, 12–17 → “50% de descuento”, ≥18 → “Precio completo”.</li>
-        <li>El acceso VIP solo es para mayores de 18 con pulsera. Pedí edad y si tiene pulsera. Mostrá “Sector VIP” o “Sector general”.</li>
-        <li>Si hace frío (≤10 °C) o llueve y la función es antes de las 20 hs, hay 15% de descuento. Pedí temperatura, clima y hora y mostrá el resultado.</li>
-      </ol></details>
+      <details>
+        <summary>Alonso Jerónimo – Festival de música</summary>
+        <ol>
+          <li>El festival necesita calcular entradas según la edad de los asistentes. Pedí la edad utilizando el prompt
+            y mostrá en la consola: si la edad es menor a 12 → “Entrada gratis”, si está entre 12 y 17 → “50% de
+            descuento” y si es mayor a 18 → “Precio completo”.</li>
+          <li>Tambien vamos a verificar el acceso VIP, el cual es exclusivo para mayores de 18 con pulsera. Pedí edad y
+            si tiene pulsera. Mostrá “Sector VIP” o “Sector general”.</li>
+          <li>Si hace frío (temperatura menor a 10 °C) y la función es antes de las 20 hs, hay 15% de descuento. Pedí
+            temperatura y hora con prompt() y mostrá el resultado en la consola.</li>
+        </ol>
+      </details>
 
-      <details><summary>Arrigone Brunella – Cafetería</summary><ol>
-        <li>La cafetería ofrece un combo: café grande + medialuna. Pedí tamaño y si lleva medialuna. Mostrá “10% de descuento” o “Precio normal”.</li>
-        <li>Además de eso, de 16 a 19 hs la cafeteria ofrece un 5% de descuento. Pedí hora y día y mostrá si aplica o no dicho descuento.</li>
-      </ol></details>
+      <details>
+        <summary>Arrigone Brunella – Cafetería</summary>
+        <ol>
+          <li>La cafetería ofrece un combo: Si el cafe es grande y tiene medialunas, mostrá “10% de
+            descuento”, si no “Precio normal”. Pedí al usuario que ingrese el tamaño del cafe
+            (grande, chico o mediano) y si lleva medialuna.</li>
+          <li>Además de eso, de 16 a 19 hs la cafeteria ofrece un 5% de descuento. Pedí al usuario que ingrese la hora y
+            mostrá si aplica o
+            no dicho descuento.</li>
+        </ol>
+      </details>
 
-      <details><summary>Basante Sabarots Antonia – Tienda de plantas</summary><ol>
-        <li>La tienda da envío gratis desde $5000 o si sos socia. Pedí total de compra y si es socia. Mostrá al usuario si tiene o no envío gratis.</li>
-        <li>Si es planta de interior y hay poca luz → recomendar de sombra. Si es exterior y hay heladas → advertir cuidado. Pedí tipo de planta y clima.</li>
-      </ol></details>
+      <details>
+        <summary>Basante Sabarots Antonia – Tienda de plantas</summary>
+        <ol>
+          <li>La tienda da envío gratis a partir de $5000 o si sos socio/a. Pedí al usuario que ingrese el total de
+            compra y si es socia. Mostrá al
+            usuario si tiene o no envío gratis.</li>
+          <li>El local suele dar recomendaciones a sus clientes con sus plantas nuevas, si la planta es de interior y
+            hay poca luz →
+            "se recomienda comprar planta de sombra". Si es exterior y hay heladas → "advertir
+            cuidado". Pedí tipo de planta y clima.</li>
+          <li>Recordá que estos datos los guardas en variables.</li>
+        </ol>
+      </details>
 
-      <details><summary>Bega Joaquín – Gimnasio</summary><ol>
-        <li>El gimnasio pide requisitos según edad. Pedí edad y mostrá: edad <16 → requiere autorización y certificado, edad entre 16 y 65 → certificado, edad >65 → requiere certificado y planilla médica.</li>
-        <li>Además, necesita saber que clientes tienen descuento, si los clientes asisten 3 veces o más por semana, hay descuento del 10%, de lo contrario no hay descuento. Pedí datos con prompt() y mostrá si aplica el descuento.</li>
-      </ol></details>
+      <details>
+        <summary>Bega Joaquín – Gimnasio</summary>
+        <ol>
+          <li>El gimnasio pide a sus clientes, ciertos requisitos según edad. Pedí al cliente que ingrese edad y mostrá
+            en la consola lo siguiente: si la edad es menor a 16 → "requiere autorización y
+            certificado", si dicha edad está entre 16 y 65 → certificado, y si la edad es mayor a 65 → requiere
+            certificado y planilla médica.</li>
+          <li>Además, necesita saber que clientes tienen descuento, <b>si los clientes asisten 3 veces o más por semana,
+              hay descuento del 10%</b>, de lo <b>contrario no hay descuento</b>. Pedí datos con prompt(), guardalos en
+              variables y mostrá en la consola si aplica el
+              descuento.</li>
+        </ol>
+      </details>
 
-      <details><summary>Borda Martiniano – Club de lectura</summary><ol>
-        <li>El club premia lectores. Pedí libros leídos en el mes y mostrá: ≥3 → “Lector destacado”, 1–2 → “¡Bien!”, 0 → “¡Empezá hoy!”.</li>
-        <li>Si el género favorito es fantasía o ciencia ficción y acepta correos, el sistema manda recomendaciones. Pedí datos y mostrá resultado.</li>
-      </ol></details>
+      <details>
+        <summary>Borda Martiniano – Club de lectura</summary>
+        <ol>
+          <li>El club premia a sus lectores, para esto debemos saber cuantos libros leen en el mes. Pedí al usuario que
+            ingrese la cantidad de libros leídos en el mes y mostrá en la consola: si la cantidad es mayor a 3 → “Lector
+            destacado”, si la cantidad está entre 1 y 2 →
+            “¡Bien!”, pero si la cantidad es 0 → “¡Empezá hoy!”.</li>
+          <li>Como buen clue de lectura, tambien se hacen recomendaciones de libros a sus miembros, pero de ciertos
+            generos en particular. Si el género favorito del miembro del club es fantasía o ciencia ficción, el sistema
+            manda recomendaciones de libros, de lo contrario no envia nada.
+            Pedí datos con prompt() y mostrá resultados en la consola.</li>
+        </ol>
+      </details>
 
-      <details><summary>Bustos Minetti Antonio – Panadería</summary><ol>
-        <li>La panadería da descuentos por cantidad. Pedí facturas y mostrá: ≥12 → 20%, 6 → 10%, menos → normal.</li>
-        <li>De lunes a viernes antes de las 9 hay 2x1 en medialunas. Pedí día y hora y mostrá si aplica.</li>
-      </ol></details>
+      <details>
+        <summary>Bustos Minetti Antonio – Panadería</summary>
+        <ol>
+          <li>La panadería da descuentos por cantidad. Pedí facturas y mostrá: ≥12 → 20%, 6 → 10%, menos → normal.</li>
+          <li>De lunes a viernes antes de las 9 hay 2x1 en medialunas. Pedí día y hora y mostrá si aplica.</li>
+        </ol>
+      </details>
 
-      <details><summary>Choco Delfina – Indumentaria</summary><ol>
-        <li>Si es remera y hay stock, mostrar “Agregar al carrito”. Si no, “Notificar disponibilidad”. Pedí tipo de prenda y stock.</li>
-        <li>Para cambios: ticket válido hasta 30 días o falla. Pedí días desde compra y si tiene ticket y mostrá resultado.</li>
-      </ol></details>
+      <details>
+        <summary>Choco Delfina – Indumentaria</summary>
+        <ol>
+          <li>Si es remera y hay stock, mostrar “Agregar al carrito”. Si no, “Notificar disponibilidad”. Pedí tipo de
+            prenda y stock.</li>
+          <li>Para cambios: ticket válido hasta 30 días o falla. Pedí días desde compra y si tiene ticket y mostrá
+            resultado.</li>
+        </ol>
+      </details>
 
-      <details><summary>De La Cruz Juan Ignacio – Blog de viajes</summary><ol>
-        <li>Según el destino, se recomienda algo: playa → protector, montaña → abrigo, ciudad → mapa. Pedí destino y mostrá consejo.</li>
-        <li>En verano (diciembre a febrero) o fin de semana largo hay alta demanda. Pedí mes y si es finde largo y mostrá resultado.</li>
-      </ol></details>
+      <details>
+        <summary>De La Cruz Juan Ignacio – Blog de viajes</summary>
+        <ol>
+          <li>Según el destino, se recomienda algo: playa → protector, montaña → abrigo, ciudad → mapa. Pedí destino y
+            mostrá consejo.</li>
+          <li>En verano (diciembre a febrero) o fin de semana largo hay alta demanda. Pedí mes y si es finde largo y
+            mostrá resultado.</li>
+        </ol>
+      </details>
 
-      <details><summary>De La Serna Lila – Museo/Exposición</summary><ol>
-        <li>El museo da entradas reducidas a menores de 12, mayores de 65 y estudiantes. Pedí edad y si es estudiante y mostrá precio.</li>
-        <li>Las visitas guiadas son sábados y domingos entre 14 y 18. Pedí día y hora y mostrá si hay guía o no.</li>
-      </ol></details>
+      <details>
+        <summary>De La Serna Lila – Museo/Exposición</summary>
+        <ol>
+          <li>El museo da entradas reducidas a menores de 12, mayores de 65 y estudiantes. Pedí edad y si es estudiante
+            y mostrá precio.</li>
+          <li>Las visitas guiadas son sábados y domingos entre 14 y 18. Pedí día y hora y mostrá si hay guía o no.</li>
+        </ol>
+      </details>
 
-      <details><summary>Delsol Benicio – Refugio de animales</summary><ol>
-        <li>Según dónde vivís, podés adoptar: casa con patio → perro grande, depto chico → perro chico o gato. Pedí datos y mostrá resultado.</li>
-        <li>Para adoptar: mayor de 18, ingresos y compromiso firmado. Pedí datos y mostrá si es apto.</li>
-        <li>Si hay niños y elegís gato arisco → “No recomendado”. Si no → “Recomendado”. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Delsol Benicio – Refugio de animales</summary>
+        <ol>
+          <li>Según dónde vivís, podés adoptar: casa con patio → perro grande, depto chico → perro chico o gato. Pedí
+            datos y mostrá resultado.</li>
+          <li>Para adoptar: mayor de 18, ingresos y compromiso firmado. Pedí datos y mostrá si es apto.</li>
+          <li>Si hay niños y elegís gato arisco → “No recomendado”. Si no → “Recomendado”. Pedí datos y mostrá mensaje.
+          </li>
+        </ol>
+      </details>
 
-      <details><summary>Dethier Continelli Ivo – Fotografía</summary><ol>
-        <li>Las descargas en alta resolución llevan marca de agua si no sos cliente. Pedí tipo de descarga y si sos cliente y mostrá mensaje.</li>
-        <li>Turnos: sábados y domingos de 10 a 18. Pedí día y hora y mostrá si se puede reservar.</li>
-      </ol></details>
+      <details>
+        <summary>Dethier Continelli Ivo – Fotografía</summary>
+        <ol>
+          <li>Las descargas en alta resolución llevan marca de agua si no sos cliente. Pedí tipo de descarga y si sos
+            cliente y mostrá mensaje.</li>
+          <li>Turnos: sábados y domingos de 10 a 18. Pedí día y hora y mostrá si se puede reservar.</li>
+        </ol>
+      </details>
 
-      <details><summary>Diaz Victoria – Restó saludable</summary><ol>
-        <li>Si el menú es vegano o sin TACC y hay stock, mostrar “Disponible”. Si no → “Ofrecer alternativa”. Pedí datos y mostrá mensaje.</li>
-        <li>Si son más de 6 personas entre 20 y 22 hs → “Necesita seña”. Si no → “Reserva aceptada”. Pedí datos y mostrá resultado.</li>
-      </ol></details>
+      <details>
+        <summary>Diaz Victoria – Restó saludable</summary>
+        <ol>
+          <li>Si el menú es vegano o sin TACC y hay stock, mostrar “Disponible”. Si no → “Ofrecer alternativa”. Pedí
+            datos y mostrá mensaje.</li>
+          <li>Si son más de 6 personas entre 20 y 22 hs → “Necesita seña”. Si no → “Reserva aceptada”. Pedí datos y
+            mostrá resultado.</li>
+        </ol>
+      </details>
 
-      <details><summary>Farias Vera Edda – Escuela de idiomas</summary><ol>
-        <li>El sistema asigna curso según nivel: básico → A1, intermedio → B1, avanzado → C1. Pedí nivel y mostrá curso.</li>
-        <li>Si promedio >8 o (promedio >6 y ingresos <200000) → “Beca otorgada”. Si no → “Sin beca”. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Farias Vera Edda – Escuela de idiomas</summary>
+        <ol>
+          <li>El sistema asigna curso según nivel: básico → A1, intermedio → B1, avanzado → C1. Pedí nivel y mostrá
+            curso.</li>
+          <li>Si promedio >8 o (promedio >6 y ingresos <200000) → “Beca otorgada”. Si no → “Sin beca”. Pedí datos y
+              mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Fernandez Olivero Amparo – Estudio de diseño</summary><ol>
-        <li>Si pedís branding y web → descuento pack. Si uno solo → precio normal. Pedí datos y mostrá mensaje.</li>
-        <li>Si el plazo es <7 días y complejidad alta → recargo 25%. Si no → sin recargo. Pedí datos y mostrá resultado.</li>
-      </ol></details>
+      <details>
+        <summary>Fernandez Olivero Amparo – Estudio de diseño</summary>
+        <ol>
+          <li>Si pedís branding y web → descuento pack. Si uno solo → precio normal. Pedí datos y mostrá mensaje.</li>
+          <li>Si el plazo es <7 días y complejidad alta → recargo 25%. Si no → sin recargo. Pedí datos y mostrá
+              resultado.</li>
+        </ol>
+      </details>
 
-      <details><summary>Garcia Montes Augusto – Tech news</summary><ol>
-        <li>Los no logueados solo pueden leer 2 artículos. Pedí si está logueado y cuántos leyó. Si no logueado y ≥3 → bloqueado.</li>
-        <li>Si categoría favorita es IA o Ciberseguridad y acepta correos → suscripto. Pedí datos y mostrá mensaje.</li>
-        <li>Si es premium o docente → acceso temprano. Si no → normal. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Garcia Montes Augusto – Tech news</summary>
+        <ol>
+          <li>Los no logueados solo pueden leer 2 artículos. Pedí si está logueado y cuántos leyó. Si no logueado y ≥3 →
+            bloqueado.</li>
+          <li>Si categoría favorita es IA o Ciberseguridad y acepta correos → suscripto. Pedí datos y mostrá mensaje.
+          </li>
+          <li>Si es premium o docente → acceso temprano. Si no → normal. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Garcia Rojas Delfina Alejandra – Guardería canina</summary><ol>
-        <li>Si el perro pesa >10 kg y turno es juego libre → patio grande. Si no → patio chico. Pedí datos y mostrá mensaje.</li>
-        <li>Si tiene vacunas y antiparasitario → apto. Si no → no apto. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Garcia Rojas Delfina Alejandra – Guardería canina</summary>
+        <ol>
+          <li>Si el perro pesa >10 kg y turno es juego libre → patio grande. Si no → patio chico. Pedí datos y mostrá
+            mensaje.</li>
+          <li>Si tiene vacunas y antiparasitario → apto. Si no → no apto. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Garro Santiago – Tienda gamer retro</summary><ol>
-        <li>Si consola es NES o SNES → 10% descuento retro. Si Play → normal. Pedí consola y mostrá resultado.</li>
-        <li>Si es VIP → 15%. Si además es viernes → 20%. Pedí datos y mostrá mensaje.</li>
-        <li>Si compra ≥50000 o ≥3 ítems → envío gratis. Si no → sumar envío. Pedí datos y mostrá resultado.</li>
-      </ol></details>
+      <details>
+        <summary>Garro Santiago – Tienda gamer retro</summary>
+        <ol>
+          <li>Si consola es NES o SNES → 10% descuento retro. Si Play → normal. Pedí consola y mostrá resultado.</li>
+          <li>Si es VIP → 15%. Si además es viernes → 20%. Pedí datos y mostrá mensaje.</li>
+          <li>Si compra ≥50000 o ≥3 ítems → envío gratis. Si no → sumar envío. Pedí datos y mostrá resultado.</li>
+        </ol>
+      </details>
 
-      <details><summary>Gomez Wals Juan Augusto – Productora audiovisual</summary><ol>
-        <li>Si incluye filmación y edición → Pack Silver. Si además motion → Pack Gold. Pedí datos y mostrá mensaje.</li>
-        <li>Si es exterior y llueve → reprogramar. Si interior → continuar. Pedí datos y mostrá mensaje.</li>
-        <li>Si necesita 48 h y el video dura >3 min → recargo urgente. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Gomez Wals Juan Augusto – Productora audiovisual</summary>
+        <ol>
+          <li>Si incluye filmación y edición → Pack Silver. Si además motion → Pack Gold. Pedí datos y mostrá mensaje.
+          </li>
+          <li>Si es exterior y llueve → reprogramar. Si interior → continuar. Pedí datos y mostrá mensaje.</li>
+          <li>Si necesita 48 h y el video dura >3 min → recargo urgente. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Gonzalez Marusich Bautista – Feria emprendedores</summary><ol>
-        <li>Si potencia <1 kW y trae horno → rechazar stand. Si no → aceptar. Pedí datos y mostrá mensaje.</li>
-        <li>Si sigue la cuenta o newsletter → participa del sorteo. Si no → no participa. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Gonzalez Marusich Bautista – Feria emprendedores</summary>
+        <ol>
+          <li>Si potencia <1 kW y trae horno → rechazar stand. Si no → aceptar. Pedí datos y mostrá mensaje.</li>
+          <li>Si sigue la cuenta o newsletter → participa del sorteo. Si no → no participa. Pedí datos y mostrá mensaje.
+          </li>
+        </ol>
+      </details>
 
-      <details><summary>Hernaez Joaquin Simon – Bicicletería</summary><ol>
-        <li>Si el servicio es full (incluye frenos y transmisión) → 15% descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
-        <li>Si es sábado 9–12 hs → cupos limitados. Si no → turno normal. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Hernaez Joaquin Simon – Bicicletería</summary>
+        <ol>
+          <li>Si el servicio es full (incluye frenos y transmisión) → 15% descuento. Si no → normal. Pedí datos y mostrá
+            mensaje.</li>
+          <li>Si es sábado 9–12 hs → cupos limitados. Si no → turno normal. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Jazmin Lardone – ONG medioambiental</summary><ol>
-        <li>Si donación ≥5000 o mensual → “Badge Aliado verde”. Si no → normal. Pedí datos y mostrá mensaje.</li>
-        <li>Si evento es recolección y no llueve → confirmado. Si llueve → reprogramar. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Jazmin Lardone – ONG medioambiental</summary>
+        <ol>
+          <li>Si donación ≥5000 o mensual → “Badge Aliado verde”. Si no → normal. Pedí datos y mostrá mensaje.</li>
+          <li>Si evento es recolección y no llueve → confirmado. Si llueve → reprogramar. Pedí datos y mostrá mensaje.
+          </li>
+        </ol>
+      </details>
 
-      <details><summary>Lambert Oriani Malena – Galería de arte</summary><ol>
-        <li>Si estudiante o ≥65 → precio reducido. Si no → normal. Pedí edad y si es estudiante y mostrá resultado.</li>
-        <li>Si obra no apta para menores y edad <13 → ocultar detalles. Si no → mostrar detalles. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Lambert Oriani Malena – Galería de arte</summary>
+        <ol>
+          <li>Si estudiante o ≥65 → precio reducido. Si no → normal. Pedí edad y si es estudiante y mostrá resultado.
+          </li>
+          <li>Si obra no apta para menores y edad <13 → ocultar detalles. Si no → mostrar detalles. Pedí datos y mostrá
+              mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Lardone Jazmin – Heladería</summary><ol>
-        <li>Si tamaño grande y 2 sabores → 10% descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
-        <li>Si sabor sin TACC y cucurucho sin TACC → apto celíacos. Si no → no apto. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Lardone Jazmin – Heladería</summary>
+        <ol>
+          <li>Si tamaño grande y 2 sabores → 10% descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
+          <li>Si sabor sin TACC y cucurucho sin TACC → apto celíacos. Si no → no apto. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Martin Caro Ernestina – Spa/estética</summary><ol>
-        <li>Si elige masaje+facial → 15% off. Si además manos → 20% off. Pedí datos y mostrá mensaje.</li>
-        <li>Si embarazada o con lesión → restringir tratamientos. Si no → habilitado. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Martin Caro Ernestina – Spa/estética</summary>
+        <ol>
+          <li>Si elige masaje+facial → 15% off. Si además manos → 20% off. Pedí datos y mostrá mensaje.</li>
+          <li>Si embarazada o con lesión → restringir tratamientos. Si no → habilitado. Pedí datos y mostrá mensaje.
+          </li>
+        </ol>
+      </details>
 
-      <details><summary>Morales Mandrile Agustina – Academia de danza</summary><ol>
-        <li>Según edad: <10 → infantil, 10–14 → junior, ≥15 → teens/adultos. Pedí edad y mostrá grupo.</li>
-        <li>Si asiste ≥4 veces/semana y promedio ≥8 → beca parcial. Si no → sin beca. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Morales Mandrile Agustina – Academia de danza</summary>
+        <ol>
+          <li>Según edad: <10 → infantil, 10–14 → junior, ≥15 → teens/adultos. Pedí edad y mostrá grupo.</li>
+          <li>Si asiste ≥4 veces/semana y promedio ≥8 → beca parcial. Si no → sin beca. Pedí datos y mostrá mensaje.
+          </li>
+        </ol>
+      </details>
 
-      <details><summary>Moran Sofia – Blog de recetas</summary><ol>
-        <li>Si receta es vegana o sin TACC → badge especial. Si no → normal. Pedí tipo de receta y mostrá mensaje.</li>
-        <li>Si tiempo ≤20 min y dificultad fácil → “Receta rápida”. Si no → “Receta común”. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Moran Sofia – Blog de recetas</summary>
+        <ol>
+          <li>Si receta es vegana o sin TACC → badge especial. Si no → normal. Pedí tipo de receta y mostrá mensaje.
+          </li>
+          <li>Si tiempo ≤20 min y dificultad fácil → “Receta rápida”. Si no → “Receta común”. Pedí datos y mostrá
+            mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Peri Bautista Agustin – E-sports team</summary><ol>
-        <li>Si K/D ≥1.2 y latencia <50 → titular. Si K/D ≥1.0 y latencia <70 → suplente. Si no → no apto. Pedí datos y mostrá mensaje.</li>
-        <li>Si es sábado o domingo y hora 18–22 → scrim. Si no → entrenamiento. Pedí datos y mostrá mensaje.</li>
-        <li>Si es titular o socio premium → 20% descuento merch. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Peri Bautista Agustin – E-sports team</summary>
+        <ol>
+          <li>Si K/D ≥1.2 y latencia <50 → titular. Si K/D ≥1.0 y latencia <70 → suplente. Si no → no apto. Pedí datos y
+              mostrá mensaje.</li>
+          <li>Si es sábado o domingo y hora 18–22 → scrim. Si no → entrenamiento. Pedí datos y mostrá mensaje.</li>
+          <li>Si es titular o socio premium → 20% descuento merch. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Reidel Pia Valentina – Librería</summary><ol>
-        <li>Si stock disponible → retirar hoy. Si no y proveedor tiene → reservado. Pedí datos y mostrá mensaje.</li>
-        <li>Si socio o total ≥30000 → descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Reidel Pia Valentina – Librería</summary>
+        <ol>
+          <li>Si stock disponible → retirar hoy. Si no y proveedor tiene → reservado. Pedí datos y mostrá mensaje.</li>
+          <li>Si socio o total ≥30000 → descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Roldán Martina – Turismo rural</summary><ol>
-        <li>Si mes es diciembre-febrero o fin de semana largo → alta demanda. Si no → normal. Pedí datos y mostrá mensaje.</li>
-        <li>Si hay niños y temperatura ≤10 → recomendar actividades bajo techo. Pedí datos y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Roldán Martina – Turismo rural</summary>
+        <ol>
+          <li>Si mes es diciembre-febrero o fin de semana largo → alta demanda. Si no → normal. Pedí datos y mostrá
+            mensaje.</li>
+          <li>Si hay niños y temperatura ≤10 → recomendar actividades bajo techo. Pedí datos y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Romero Valentina – Conferencia de tecnología</summary><ol>
-        <li>Si estudiante o speaker → entrada gratis. Si público → paga. Pedí datos y mostrá mensaje.</li>
-        <li>Si pase pro y cupo → taller premium. Si no → no disponible. Pedí datos y mostrá mensaje.</li>
-        <li>Si dos charlas coinciden en hora → conflicto. Pedí horas y mostrá mensaje.</li>
-      </ol></details>
+      <details>
+        <summary>Romero Valentina – Conferencia de tecnología</summary>
+        <ol>
+          <li>Si estudiante o speaker → entrada gratis. Si público → paga. Pedí datos y mostrá mensaje.</li>
+          <li>Si pase pro y cupo → taller premium. Si no → no disponible. Pedí datos y mostrá mensaje.</li>
+          <li>Si dos charlas coinciden en hora → conflicto. Pedí horas y mostrá mensaje.</li>
+        </ol>
+      </details>
 
-      <details><summary>Sanchez Ollo Genaro – Matemáticas</summary><ol>
-        <li>Un sitio de matemáticas quiere clasificar números. Pedí un número y mostrá si es “Par” o “Impar”.</li>
-        <li>El profe necesita saber el signo de un número. Pedí un número y mostrá si es “Positivo”, “Negativo” o “Cero”.</li>
-        <li>Para una actividad, hay que calcular un porcentaje. Pedí dos números: “parte” y “total”. Si el total es mayor a 0, calculá <code>parte / total * 100</code> y mostrá “El porcentaje es X%”. Si el total es 0, mostrá “No se puede dividir por 0”.</li>
-      </ol></details>
+      <details>
+        <summary>Sanchez Ollo Genaro – Matemáticas</summary>
+        <ol>
+          <li>Un sitio de matemáticas quiere clasificar números. Pedí un número y mostrá si es “Par” o “Impar”.</li>
+          <li>El profe necesita saber el signo de un número. Pedí un número y mostrá si es “Positivo”, “Negativo” o
+            “Cero”.</li>
+          <li>Para una actividad, hay que calcular un porcentaje. Pedí dos números: “parte” y “total”. Si el total es
+            mayor a 0, calculá <code>parte / total * 100</code> y mostrá “El porcentaje es X%”. Si el total es 0, mostrá
+            “No se puede dividir por 0”.</li>
+        </ol>
+      </details>
 
-      <details><summary>Sosa Benicio – Comiquería/Juegos de mesa</summary><ol>
-        <li>La tienda permite reservar juegos si hay stock. Pedí el stock y si el usuario está logueado. Si stock &gt; 0 → “Podés reservar”. Si stock = 0 y está logueado → “Lista de espera”.</li>
-        <li>Los torneos se hacen viernes o sábado. Pedí día y tipo de juego. Si es viernes o sábado y el juego es “torneo” → “Inscripción habilitada”.</li>
-      </ol></details>
+      <details>
+        <summary>Sosa Benicio – Comiquería/Juegos de mesa</summary>
+        <ol>
+          <li>La tienda permite reservar juegos si hay stock. Pedí el stock y si el usuario está logueado. Si stock &gt;
+            0 → “Podés reservar”. Si stock = 0 y está logueado → “Lista de espera”.</li>
+          <li>Los torneos se hacen viernes o sábado. Pedí día y tipo de juego. Si es viernes o sábado y el juego es
+            “torneo” → “Inscripción habilitada”.</li>
+        </ol>
+      </details>
 
-      <details><summary>Vallejos Santino Segundo – Cine club</summary><ol>
-        <li>El cine debe controlar la edad. Pedí tu edad y la clasificación (+13 o ATP). Si es +13 y tu edad es menor a 13 → “No podés entrar”. Si no → “Podés entrar”.</li>
-        <li>Hay descuentos por cantidad o por ser socio. Pedí cuántas funciones comprás y si sos socio. Si comprás 4 funciones o sos socio → “25% de descuento”.</li>
-        <li>Algunas funciones son especiales. Pedí si la fecha es feriado o domingo a la noche. Si alguno es sí → “Función especial”.</li>
-      </ol></details>
+      <details>
+        <summary>Vallejos Santino Segundo – Cine club</summary>
+        <ol>
+          <li>El cine debe controlar la edad. Pedí tu edad y la clasificación (+13 o ATP). Si es +13 y tu edad es menor
+            a 13 → “No podés entrar”. Si no → “Podés entrar”.</li>
+          <li>Hay descuentos por cantidad o por ser socio. Pedí cuántas funciones comprás y si sos socio. Si comprás 4
+            funciones o sos socio → “25% de descuento”.</li>
+          <li>Algunas funciones son especiales. Pedí si la fecha es feriado o domingo a la noche. Si alguno es sí →
+            “Función especial”.</li>
+        </ol>
+      </details>
 
     </section>
   </main>
 </body>
+
 </html>
