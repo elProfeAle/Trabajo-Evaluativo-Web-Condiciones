@@ -193,29 +193,44 @@
       <details>
         <summary>De La Cruz Juan Ignacio – Blog de viajes</summary>
         <ol>
-          <li>Según el destino, se recomienda algo: playa → protector, montaña → abrigo, ciudad → mapa. Pedí destino y
-            mostrá consejo.</li>
-          <li>En verano (diciembre a febrero) o fin de semana largo hay alta demanda. Pedí mes y si es finde largo y
-            mostrá resultado.</li>
+          <li>Solicitar al usuario que ingrese el destino que quiere visitar y se le recomienda algo: Si es playa
+            entonces "Se recomienda usar protector",
+            Si es montaña entonces "Se recomienda usar abrigo" y si es ciudad "se recomienda tener un mapa a mano". Pedí
+            destino usando el prompt() y mostrá consejos en la consola.</li>
+          <li>Tambien necesitamos que el programa le indique al usuario cuando es temporada alta: Si el mes es
+            diciembre, enero o febrero entonces es "Temporada alta", si es junio, julio o agosto sería "Temporada
+            media", y si es
+            cualquier otro mes entonces "Temporada baja". Pedí al usuario que ingrese el mes y mostrá el resultado en
+            una alerta.</li>
+
         </ol>
       </details>
 
       <details>
         <summary>De La Serna Lila – Museo/Exposición</summary>
         <ol>
-          <li>El museo da entradas reducidas a menores de 12, mayores de 65 y estudiantes. Pedí edad y si es estudiante
-            y mostrá precio.</li>
+          <li>Necesitamos programar el sistema de venta de entradas del museo, éstas tienen un precio reducido según las
+            siguientes caracteristicas:
+            Si sos menor de 12 años, mayor de 65 o estudiante entonces "Obtenes un precio reducido", caso contrario "El
+            precio es normal."</li>
           <li>Las visitas guiadas son sábados y domingos entre 14 y 18. Pedí día y hora y mostrá si hay guía o no.</li>
+          <li>Recordá que la información debe ser solicitada con un prompt()</li>
         </ol>
       </details>
 
       <details>
         <summary>Delsol Benicio – Refugio de animales</summary>
         <ol>
-          <li>Según dónde vivís, podés adoptar: casa con patio → perro grande, depto chico → perro chico o gato. Pedí
-            datos y mostrá resultado.</li>
-          <li>Para adoptar: mayor de 18, ingresos y compromiso firmado. Pedí datos y mostrá si es apto.</li>
-          <li>Si hay niños y elegís gato arisco → “No recomendado”. Si no → “Recomendado”. Pedí datos y mostrá mensaje.
+          <li>Los clientes necesitan recomendaciones a la hora de adoptar, principalmente por su lugar de residencia,
+            asi que el refugio da ciertas recomendaciones. Según dónde vivís, podés adoptar:
+            Si tenes casa con patio entonces "Podrías adoptar un perro grande",
+            En cambio si tenés un depto chico "Podrías adoptar un perro chico o gato"
+            Pedí datos al usuario y mostrá resultados en la consola.</li>
+          <li>Otra funcion: Requisitos para adoptar: mayor de 18 y compromiso firmado. Pedí datos de edad, si firmo el
+            compromiso y mostrá si es apto.</li>
+          <li>Programa la siguiente funcionalidad: Tipos de datos a adoptar, Si hay niños y elegís gato arisco entonces
+            “No
+            recomendado”, caso contrario es “Recomendado”. Mosrar resultado en la consola.
           </li>
         </ol>
       </details>
@@ -223,222 +238,354 @@
       <details>
         <summary>Dethier Continelli Ivo – Fotografía</summary>
         <ol>
-          <li>Las descargas en alta resolución llevan marca de agua si no sos cliente. Pedí tipo de descarga y si sos
+          <li>Funcionalidad a programar: Las descargas en alta resolución llevan marca de agua si no sos cliente. Pedí
+            tipo de descarga (Alta o Baja resolucion) y si sos
             cliente y mostrá mensaje.</li>
-          <li>Turnos: sábados y domingos de 10 a 18. Pedí día y hora y mostrá si se puede reservar.</li>
+          <li>Programar sistema de turnos: sábados y domingos de 10 a 18 horarios disponibles para reservar, cualquier
+            otro dia y horario no está disponible. Pedí día y hora y mostrá si se puede reservar.</li>
         </ol>
       </details>
 
       <details>
-        <summary>Diaz Victoria – Restó saludable</summary>
+        <summary>Díaz Victoria – Restó saludable</summary>
         <ol>
-          <li>Si el menú es vegano o sin TACC y hay stock, mostrar “Disponible”. Si no → “Ofrecer alternativa”. Pedí
-            datos y mostrá mensaje.</li>
-          <li>Si son más de 6 personas entre 20 y 22 hs → “Necesita seña”. Si no → “Reserva aceptada”. Pedí datos y
-            mostrá resultado.</li>
+          <li>El restaurante ofrece menús especiales. Pedí al usuario que ingrese si el menú es vegano o sin TACC y si
+            hay stock disponible.
+            Si el menú cumple alguna de esas condiciones y hay stock, entonces mostrá en la consola “Menú disponible”.
+            En caso contrario mostrá “Ofrecer alternativa”.</li>
+
+          <li>También vamos a verificar las reservas. Pedí al usuario cuántas personas son y en qué horario reservarán.
+            Si son más de 6 personas y la reserva es entre las 20 y 22 horas, entonces mostrá en la consola “Necesita
+            seña”.
+            En cualquier otro caso mostrá “Reserva aceptada”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Farias Vera Edda – Escuela de idiomas</summary>
         <ol>
-          <li>El sistema asigna curso según nivel: básico → A1, intermedio → B1, avanzado → C1. Pedí nivel y mostrá
-            curso.</li>
-          <li>Si promedio >8 o (promedio >6 y ingresos <200000) → “Beca otorgada”. Si no → “Sin beca”. Pedí datos y
-              mostrá mensaje.</li>
+          <li>La escuela asigna un curso según el nivel del alumno. Pedí al usuario que ingrese su nivel (básico,
+            intermedio o avanzado).
+            Si es básico entonces asignar A1.
+            Si es intermedio entonces asignar B1.
+            Si es avanzado entonces asignar C1.
+            Mostrá el curso asignado en la consola.</li>
+
+          <li>También vamos a ver si el alumno recibe beca. Pedí el promedio y los ingresos.
+            Si el promedio es mayor a 8 o si el promedio es mayor a 6 y los ingresos son menores a 200000, entonces
+            mostrá en la consola “Beca otorgada”.
+            En caso contrario mostrá “Sin beca”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Fernandez Olivero Amparo – Estudio de diseño</summary>
         <ol>
-          <li>Si pedís branding y web → descuento pack. Si uno solo → precio normal. Pedí datos y mostrá mensaje.</li>
-          <li>Si el plazo es <7 días y complejidad alta → recargo 25%. Si no → sin recargo. Pedí datos y mostrá
-              resultado.</li>
+          <li>El estudio ofrece distintos servicios. Pedí al usuario que indique si contrata branding y si contrata web.
+            Si contrata ambos, entonces mostrá en la consola “Descuento pack”.
+            Si contrata solo uno, mostrá en la consola “Precio normal”.</li>
+
+          <li>También se aplican recargos según el plazo y la complejidad. Pedí al usuario el plazo en días y la
+            complejidad del proyecto.
+            Si el plazo es menor a 7 días y la complejidad es alta, entonces mostrá en la consola “Recargo del 25%”.
+            En cualquier otro caso mostrá “Sin recargo”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Garcia Montes Augusto – Tech news</summary>
         <ol>
-          <li>Los no logueados solo pueden leer 2 artículos. Pedí si está logueado y cuántos leyó. Si no logueado y ≥3 →
-            bloqueado.</li>
-          <li>Si categoría favorita es IA o Ciberseguridad y acepta correos → suscripto. Pedí datos y mostrá mensaje.
-          </li>
-          <li>Si es premium o docente → acceso temprano. Si no → normal. Pedí datos y mostrá mensaje.</li>
+          <li>El sitio tiene un límite de artículos para usuarios no logueados. Pedí al usuario si está logueado y
+            cuántos artículos leyó.
+            Si no está logueado y leyó 3 o más, entonces mostrá en la consola “Bloqueado”.
+            En cualquier otro caso puede seguir leyendo.</li>
+
+          <li>También se manejan suscripciones. Pedí al usuario cuál es su categoría favorita y si acepta correos.
+            Si su categoría favorita es Inteligencia Artificial o Ciberseguridad y acepta correos, entonces mostrá en la
+            consola “Suscripto”.
+            En caso contrario mostrá “No suscripto”.</li>
+
+          <li>Algunos usuarios tienen acceso temprano. Pedí al usuario si es premium o si es docente.
+            Si cumple alguna de esas condiciones, entonces mostrá en la consola “Acceso temprano”.
+            En caso contrario mostrá “Acceso normal”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Garcia Rojas Delfina Alejandra – Guardería canina</summary>
         <ol>
-          <li>Si el perro pesa >10 kg y turno es juego libre → patio grande. Si no → patio chico. Pedí datos y mostrá
-            mensaje.</li>
-          <li>Si tiene vacunas y antiparasitario → apto. Si no → no apto. Pedí datos y mostrá mensaje.</li>
+          <li>En la guardería los perros tienen espacios según su tamaño. Pedí al usuario que ingrese el peso del perro
+            y el tipo de turno.
+            Si el perro pesa más de 10 kilos y el turno es de juego libre, entonces mostrá en la consola “Patio grande”.
+            En caso contrario mostrá “Patio chico”.</li>
+
+          <li>También se revisa la salud de los perros. Pedí al usuario si tiene vacunas y antiparasitario.
+            Si tiene ambas cosas, entonces mostrá en la consola “Apto”.
+            En caso contrario mostrá “No apto”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Garro Santiago – Tienda gamer retro</summary>
         <ol>
-          <li>Si consola es NES o SNES → 10% descuento retro. Si Play → normal. Pedí consola y mostrá resultado.</li>
-          <li>Si es VIP → 15%. Si además es viernes → 20%. Pedí datos y mostrá mensaje.</li>
-          <li>Si compra ≥50000 o ≥3 ítems → envío gratis. Si no → sumar envío. Pedí datos y mostrá resultado.</li>
+          <li>La tienda ofrece descuentos según la consola. Pedí al usuario que ingrese el tipo de consola.
+            Si la consola es NES o SNES, entonces mostrá en la consola “10% descuento retro”.
+            Si la consola es PlayStation, mostrá en la consola “Precio normal”.</li>
+
+          <li>También hay beneficios para clientes VIP. Pedí al usuario si es VIP y qué día es.
+            Si es VIP, entonces mostrá en la consola “15% de descuento”.
+            Si además es viernes, entonces mostrá en la consola “20% de descuento”.</li>
+
+          <li>La tienda también ofrece envíos. Pedí al usuario el total de la compra y la cantidad de ítems.
+            Si la compra es mayor o igual a 50000 o tiene 3 o más ítems, entonces mostrá en la consola “Envío gratis”.
+            En caso contrario mostrá “Sumar envío”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Gomez Wals Juan Augusto – Productora audiovisual</summary>
         <ol>
-          <li>Si incluye filmación y edición → Pack Silver. Si además motion → Pack Gold. Pedí datos y mostrá mensaje.
-          </li>
-          <li>Si es exterior y llueve → reprogramar. Si interior → continuar. Pedí datos y mostrá mensaje.</li>
-          <li>Si necesita 48 h y el video dura >3 min → recargo urgente. Pedí datos y mostrá mensaje.</li>
+          <li>La productora arma paquetes según los servicios. Pedí al usuario que ingrese si incluye filmación, edición
+            y motion.
+            Si incluye filmación y edición, entonces mostrá en la consola “Pack Silver”.
+            Si además incluye motion, entonces mostrá en la consola “Pack Gold”.</li>
+
+          <li>También hay condiciones por clima y lugar. Pedí al usuario si la grabación es en exterior o interior y si
+            llueve.
+            Si es en exterior y llueve, entonces mostrá en la consola “Reprogramar”.
+            Si es en interior, entonces mostrá en la consola “Continuar”.</li>
+
+          <li>La urgencia afecta el precio. Pedí al usuario el tiempo disponible en horas y la duración del video en
+            minutos.
+            Si necesita estar listo en 48 horas y el video dura más de 3 minutos, entonces mostrá en la consola “Recargo
+            urgente”.
+            En caso contrario mostrá “Sin recargo”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Gonzalez Marusich Bautista – Feria emprendedores</summary>
         <ol>
-          <li>Si potencia <1 kW y trae horno → rechazar stand. Si no → aceptar. Pedí datos y mostrá mensaje.</li>
-          <li>Si sigue la cuenta o newsletter → participa del sorteo. Si no → no participa. Pedí datos y mostrá mensaje.
-          </li>
+          <li>La feria controla el uso de energía. Pedí al usuario la potencia contratada y si trae horno eléctrico.
+            Si la potencia es menor a 1 kW y trae horno, entonces mostrá en la consola “Rechazar stand”.
+            En caso contrario mostrá “Aceptar stand”.</li>
+
+          <li>También hay sorteos para participantes. Pedí al usuario si sigue la cuenta o está suscripto al newsletter.
+            Si cumple alguna de estas condiciones, entonces mostrá en la consola “Participa del sorteo”.
+            En caso contrario mostrá “No participa”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Hernaez Joaquin Simon – Bicicletería</summary>
         <ol>
-          <li>Si el servicio es full (incluye frenos y transmisión) → 15% descuento. Si no → normal. Pedí datos y mostrá
-            mensaje.</li>
-          <li>Si es sábado 9–12 hs → cupos limitados. Si no → turno normal. Pedí datos y mostrá mensaje.</li>
+          <li>La bicicletería da descuentos según el servicio. Pedí al usuario qué servicio contrata.
+            Si el servicio es full (incluye frenos y transmisión), entonces mostrá en la consola “15% de descuento”.
+            En caso contrario mostrá “Precio normal”.</li>
+
+          <li>También hay diferencias según el día y horario. Pedí al usuario qué día y hora quiere el turno.
+            Si es sábado entre las 9 y las 12 horas, entonces mostrá en la consola “Cupos limitados”.
+            En cualquier otro caso mostrá “Turno normal”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Jazmin Lardone – ONG medioambiental</summary>
         <ol>
-          <li>Si donación ≥5000 o mensual → “Badge Aliado verde”. Si no → normal. Pedí datos y mostrá mensaje.</li>
-          <li>Si evento es recolección y no llueve → confirmado. Si llueve → reprogramar. Pedí datos y mostrá mensaje.
-          </li>
+          <li>La ONG da un reconocimiento a sus donantes. Pedí al usuario el monto de la donación y si es mensual.
+            Si la donación es mayor o igual a 5000 o si es mensual, entonces mostrá en la consola “Badge Aliado verde”.
+            En caso contrario mostrá “Donación normal”.</li>
+
+          <li>También organizan eventos. Pedí al usuario si el evento es de recolección y si llueve.
+            Si el evento es recolección y no llueve, entonces mostrá en la consola “Evento confirmado”.
+            Si llueve, entonces mostrá en la consola “Evento reprogramado”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Lambert Oriani Malena – Galería de arte</summary>
         <ol>
-          <li>Si estudiante o ≥65 → precio reducido. Si no → normal. Pedí edad y si es estudiante y mostrá resultado.
-          </li>
-          <li>Si obra no apta para menores y edad <13 → ocultar detalles. Si no → mostrar detalles. Pedí datos y mostrá
-              mensaje.</li>
+          <li>Las entradas tienen precios diferentes. Pedí al usuario la edad y si es estudiante.
+            Si es estudiante o tiene 65 años o más, entonces mostrá en la consola “Precio reducido”.
+            En caso contrario mostrá “Precio normal”.</li>
+
+          <li>Algunas obras no son aptas para menores. Pedí al usuario la edad y si la obra es apta.
+            Si la obra no es apta para menores y la edad es menor a 13, entonces mostrá en la consola “Ocultar
+            detalles”.
+            En cualquier otro caso mostrá “Mostrar detalles”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Lardone Jazmin – Heladería</summary>
         <ol>
-          <li>Si tamaño grande y 2 sabores → 10% descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
-          <li>Si sabor sin TACC y cucurucho sin TACC → apto celíacos. Si no → no apto. Pedí datos y mostrá mensaje.</li>
+          <li>Pedí al usuario el tamaño y la cantidad de sabores.
+            Si el tamaño es grande y la cantidad de sabores es igual a 2, entonces mostrá en la consola “10% de
+            descuento”.
+            En caso contrario mostrá en la consola “Precio normal”.</li>
+
+          <li>Pedí al usuario el tipo de sabor y el tipo de cucurucho.
+            Si el sabor es sin TACC y el cucurucho también es sin TACC, entonces mostrá en la consola “Apto celíacos”.
+            En caso contrario mostrá en la consola “No apto”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Martin Caro Ernestina – Spa/estética</summary>
         <ol>
-          <li>Si elige masaje+facial → 15% off. Si además manos → 20% off. Pedí datos y mostrá mensaje.</li>
-          <li>Si embarazada o con lesión → restringir tratamientos. Si no → habilitado. Pedí datos y mostrá mensaje.
-          </li>
+          <li>Pedí al usuario qué tratamientos elige.
+            Si elige masaje y facial, entonces mostrá en la consola “15% de descuento”.
+            Si además agrega manos, entonces mostrá en la consola “20% de descuento”.</li>
+
+          <li>Pedí al usuario si está embarazada o si tiene lesión.
+            Si cumple alguna de esas condiciones, entonces mostrá en la consola “Restringir tratamientos”.
+            En caso contrario mostrá en la consola “Habilitado”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Morales Mandrile Agustina – Academia de danza</summary>
         <ol>
-          <li>Según edad: <10 → infantil, 10–14 → junior, ≥15 → teens/adultos. Pedí edad y mostrá grupo.</li>
-          <li>Si asiste ≥4 veces/semana y promedio ≥8 → beca parcial. Si no → sin beca. Pedí datos y mostrá mensaje.
-          </li>
+          <li>Pedí al usuario la edad.
+            Si la edad es menor a 10, entonces mostrá en la consola “Grupo infantil”.
+            Si la edad es entre 10 y 14, entonces mostrá en la consola “Grupo junior”.
+            Si la edad es mayor o igual a 15, entonces mostrá en la consola “Grupo teens/adultos”.</li>
+
+          <li>Pedí al usuario cuántas veces asiste por semana y cuál es su promedio.
+            Si asiste 4 o más veces por semana y el promedio es mayor o igual a 8, entonces mostrá en la consola “Beca
+            parcial”.
+            En caso contrario mostrá en la consola “Sin beca”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Moran Sofia – Blog de recetas</summary>
         <ol>
-          <li>Si receta es vegana o sin TACC → badge especial. Si no → normal. Pedí tipo de receta y mostrá mensaje.
-          </li>
-          <li>Si tiempo ≤20 min y dificultad fácil → “Receta rápida”. Si no → “Receta común”. Pedí datos y mostrá
-            mensaje.</li>
+          <li>Pedí al usuario el tipo de receta.
+            Si la receta es vegana o sin TACC, entonces mostrá en la consola “Badge especial”.
+            En caso contrario mostrá en la consola “Normal”.</li>
+
+          <li>Pedí al usuario el tiempo y la dificultad de la receta.
+            Si el tiempo es menor o igual a 20 minutos y la dificultad es fácil, entonces mostrá en la consola “Receta
+            rápida”.
+            En caso contrario mostrá en la consola “Receta común”.</li>
         </ol>
       </details>
 
       <details>
-        <summary>Peri Bautista Agustin – E-sports team</summary>
+        <summary>Ejemplo – Restaurante Gourmet</summary>
         <ol>
-          <li>Si K/D ≥1.2 y latencia <50 → titular. Si K/D ≥1.0 y latencia <70 → suplente. Si no → no apto. Pedí datos y
-              mostrá mensaje.</li>
-          <li>Si es sábado o domingo y hora 18–22 → scrim. Si no → entrenamiento. Pedí datos y mostrá mensaje.</li>
-          <li>Si es titular o socio premium → 20% descuento merch. Pedí datos y mostrá mensaje.</li>
+          <li>Pedí al usuario si eligió menú vegetariano o no.
+            Si la respuesta es sí, entonces mostrá en la consola “Incluye bebida natural sin costo”.
+            En caso contrario mostrá en la consola “Incluye bebida clásica”.</li>
+
+          <li>Pedí al usuario el día de la semana.
+            Si es viernes o sábado, entonces mostrá en la consola “Noche de música en vivo”.
+            En cualquier otro día mostrá en la consola “Servicio normal”.</li>
+
+          <li>Pedí al usuario el monto total de su consumo.
+            Si el monto es mayor o igual a 20000, entonces mostrá en la consola “Accede a un postre gratis”.
+            En caso contrario mostrá en la consola “Gracias por su visita”.</li>
+
         </ol>
       </details>
+
 
       <details>
         <summary>Reidel Pia Valentina – Librería</summary>
         <ol>
-          <li>Si stock disponible → retirar hoy. Si no y proveedor tiene → reservado. Pedí datos y mostrá mensaje.</li>
-          <li>Si socio o total ≥30000 → descuento. Si no → normal. Pedí datos y mostrá mensaje.</li>
+          <li>Pedí al usuario si hay stock disponible y si el proveedor tiene stock.
+            Si hay stock disponible, entonces mostrá en la consola “Retirar hoy”.
+            Si no hay stock disponible pero el proveedor sí tiene, entonces mostrá en la consola “Reservado”.</li>
+
+          <li>Pedí al usuario si es socio y el total de la compra.
+            Si es socio o el total es mayor o igual a 30000, entonces mostrá en la consola “Descuento aplicado”.
+            En caso contrario mostrá en la consola “Precio normal”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Roldán Martina – Turismo rural</summary>
         <ol>
-          <li>Si mes es diciembre-febrero o fin de semana largo → alta demanda. Si no → normal. Pedí datos y mostrá
-            mensaje.</li>
-          <li>Si hay niños y temperatura ≤10 → recomendar actividades bajo techo. Pedí datos y mostrá mensaje.</li>
+          <li>Pedí al usuario el mes y si es fin de semana largo.
+            Si el mes es diciembre, enero o febrero, o si es fin de semana largo, entonces mostrá en la consola “Alta
+            demanda”.
+            En caso contrario mostrá en la consola “Normal”.</li>
+
+          <li>Pedí al usuario si hay niños y la temperatura.
+            Si hay niños y la temperatura es menor o igual a 10, entonces mostrá en la consola “Recomendar actividades
+            bajo techo”.
+            En caso contrario mostrá en la consola “Actividades normales”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Romero Valentina – Conferencia de tecnología</summary>
         <ol>
-          <li>Si estudiante o speaker → entrada gratis. Si público → paga. Pedí datos y mostrá mensaje.</li>
-          <li>Si pase pro y cupo → taller premium. Si no → no disponible. Pedí datos y mostrá mensaje.</li>
-          <li>Si dos charlas coinciden en hora → conflicto. Pedí horas y mostrá mensaje.</li>
+          <li>Pedí al usuario si es estudiante, speaker o público.
+            Si es estudiante o speaker, entonces mostrá en la consola “Entrada gratis”.
+            Si es público, entonces mostrá en la consola “Entrada paga”.</li>
+
+          <li>Pedí al usuario si tiene pase pro y si hay cupo.
+            Si tiene pase pro y hay cupo, entonces mostrá en la consola “Taller premium disponible”.
+            En caso contrario mostrá en la consola “No disponible”.</li>
+
+          <li>Pedí al usuario las horas de dos charlas.
+            Si las horas coinciden, entonces mostrá en la consola “Conflicto de horarios”.
+            En caso contrario mostrá en la consola “Sin conflicto”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Sanchez Ollo Genaro – Matemáticas</summary>
         <ol>
-          <li>Un sitio de matemáticas quiere clasificar números. Pedí un número y mostrá si es “Par” o “Impar”.</li>
-          <li>El profe necesita saber el signo de un número. Pedí un número y mostrá si es “Positivo”, “Negativo” o
-            “Cero”.</li>
-          <li>Para una actividad, hay que calcular un porcentaje. Pedí dos números: “parte” y “total”. Si el total es
-            mayor a 0, calculá <code>parte / total * 100</code> y mostrá “El porcentaje es X%”. Si el total es 0, mostrá
-            “No se puede dividir por 0”.</li>
+          <li>Pedí al usuario un número.
+            Si el número es divisible por 2, entonces mostrá en la consola “Par”.
+            En caso contrario mostrá en la consola “Impar”.</li>
+
+          <li>Pedí al usuario un número.
+            Si el número es mayor a 0, entonces mostrá en la consola “Positivo”.
+            Si el número es menor a 0, entonces mostrá en la consola “Negativo”.
+            Si el número es igual a 0, entonces mostrá en la consola “Cero”.</li>
+
+          <li>Pedí al usuario dos números: “parte” y “total”.
+            Si el total es mayor a 0, entonces calculá parte dividido total por 100 y mostrá en la consola “El
+            porcentaje es X%”.
+            Si el total es igual a 0, entonces mostrá en la consola “No se puede dividir por 0”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Sosa Benicio – Comiquería/Juegos de mesa</summary>
         <ol>
-          <li>La tienda permite reservar juegos si hay stock. Pedí el stock y si el usuario está logueado. Si stock &gt;
-            0 → “Podés reservar”. Si stock = 0 y está logueado → “Lista de espera”.</li>
-          <li>Los torneos se hacen viernes o sábado. Pedí día y tipo de juego. Si es viernes o sábado y el juego es
-            “torneo” → “Inscripción habilitada”.</li>
+          <li>Pedí al usuario el stock y si está logueado.
+            Si el stock es mayor a 0, entonces mostrá en la consola “Podés reservar”.
+            Si el stock es igual a 0 y el usuario está logueado, entonces mostrá en la consola “Lista de espera”.</li>
+
+          <li>Pedí al usuario el día y el tipo de juego.
+            Si el día es viernes o sábado y el tipo de juego es torneo, entonces mostrá en la consola “Inscripción
+            habilitada”.
+            En cualquier otro caso mostrá en la consola “Inscripción no disponible”.</li>
         </ol>
       </details>
 
       <details>
         <summary>Vallejos Santino Segundo – Cine club</summary>
         <ol>
-          <li>El cine debe controlar la edad. Pedí tu edad y la clasificación (+13 o ATP). Si es +13 y tu edad es menor
-            a 13 → “No podés entrar”. Si no → “Podés entrar”.</li>
-          <li>Hay descuentos por cantidad o por ser socio. Pedí cuántas funciones comprás y si sos socio. Si comprás 4
-            funciones o sos socio → “25% de descuento”.</li>
-          <li>Algunas funciones son especiales. Pedí si la fecha es feriado o domingo a la noche. Si alguno es sí →
-            “Función especial”.</li>
+          <li>Pedí al usuario la edad y la clasificación de la película.
+            Si la clasificación es +13 y la edad es menor a 13, entonces mostrá en la consola “No podés entrar”.
+            En cualquier otro caso mostrá en la consola “Podés entrar”.</li>
+
+          <li>Pedí al usuario cuántas funciones compra y si es socio.
+            Si compra 4 o más funciones o es socio, entonces mostrá en la consola “25% de descuento”.
+            En caso contrario mostrá en la consola “Precio normal”.</li>
+
+          <li>Pedí al usuario si la fecha es feriado o si es domingo a la noche.
+            Si alguna de esas condiciones es verdadera, entonces mostrá en la consola “Función especial”.
+            En caso contrario mostrá en la consola “Función común”.</li>
         </ol>
       </details>
+
 
     </section>
   </main>
